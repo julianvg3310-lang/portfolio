@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julián Martín Vargas García - Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">JMV</h1>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Julián Martín Vargas García</h1>
+            <p>Capturando momentos, creando historias</p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <p>Fotógrafo profesional especializado en fotografía de eventos, automóviles, gastronomía y viajes. Cada fotografía cuenta una historia única.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA SECTION -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2>Galería</h2>
+            
+            <!-- Filtros -->
+            <div class="filtros">
+                <button class="filtro-btn active" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="eventos">Eventos</button>
+                <button class="filtro-btn" data-filtro="privadas">Sesiones Privadas</button>
+                <button class="filtro-btn" data-filtro="automotriz">Automotriz</button>
+                <button class="filtro-btn" data-filtro="gastronomia">Gastronomía</button>
+                <button class="filtro-btn" data-filtro="hero">Inicio/Hero</button>
+            </div>
+
+            <!-- Grid de fotos -->
+            <div class="galeria-grid">
+                <!-- INICIO/HERO -->
+                <div class="galeria-item hero" data-categoria="hero">
+                    <img src="images/hero-1.jpg" alt="Templo blanco tailandés">
+                    <div class="overlay">
+                        <h3>Templo Blanco</h3>
+                    </div>
+                </div>
+
+                <div class="galeria-item hero" data-categoria="hero">
+                    <img src="images/hero-2.jpg" alt="Mono retrato">
+                    <div class="overlay">
+                        <h3>Fauna</h3>
+                    </div>
+                </div>
+
+                <div class="galeria-item hero" data-categoria="hero">
+                    <img src="images/hero-3.jpg" alt="Arquitectura moderna">
+                    <div class="overlay">
+                        <h3>Arquitectura</h3>
+                    </div>
+                </div>
+
+                <div class="galeria-item hero" data-categoria="hero">
+                    <img src="images/hero-4.jpg" alt="Calle mediterránea">
+                    <div class="overlay">
+                        <h3>Viajes</h3>
+                    </div>
+                </div>
+
+                <!-- EVENTOS (4 fotos) -->
+                <div class="galeria-item eventos" data-categoria="eventos">
+                    <img src="images/evento-1.jpg" alt="Evento 1">
+                    <div class="overlay"><h3>Evento</h3></div>
+                </div>
+
+                <div class="galeria-item eventos" data-categoria="eventos">
+                    <img src="images/evento-2.jpg" alt="Evento 2">
+                    <div class="overlay"><h3>Evento</h3></div>
+                </div>
+
+                <div class="galeria-item eventos" data-categoria="eventos">
+                    <img src="images/evento-3.jpg" alt="Evento 3">
+                    <div class="overlay"><h3>Evento</h3></div>
+                </div>
+
+                <div class="galeria-item eventos" data-categoria="eventos">
+                    <img src="images/evento-4.jpg" alt="Evento 4">
+                    <div class="overlay"><h3>Evento</h3></div>
+                </div>
+
+                <!-- SESIONES PRIVADAS (5 fotos) -->
+                <div class="galeria-item privadas" data-categoria="privadas">
+                    <img src="images/privada-1.jpg" alt="Sesión privada 1">
+                    <div class="overlay"><h3>Sesión Privada</h3></div>
+                </div>
+
+                <div class="galeria-item privadas" data-categoria="privadas">
+                    <img src="images/privada-2.jpg" alt="Sesión privada 2">
+                    <div class="overlay"><h3>Sesión Privada</h3></div>
+                </div>
+
+                <div class="galeria-item privadas" data-categoria="privadas">
+                    <img src="images/privada-3.jpg" alt="Sesión privada 3">
+                    <div class="overlay"><h3>Sesión Privada</h3></div>
+                </div>
+
+                <div class="galeria-item privadas" data-categoria="privadas">
+                    <img src="images/privada-4.jpg" alt="Sesión privada 4">
+                    <div class="overlay"><h3>Sesión Privada</h3></div>
+                </div>
+
+                <div class="galeria-item privadas" data-categoria="privadas">
+                    <img src="images/privada-5.jpg" alt="Sesión privada 5">
+                    <div class="overlay"><h3>Sesión Privada</h3></div>
+                </div>
+
+                <!-- AUTOMOTRIZ (4 fotos) -->
+                <div class="galeria-item automotriz" data-categoria="automotriz">
+                    <img src="images/auto-1.jpg" alt="Autos tuning">
+                    <div class="overlay"><h3>Tuning</h3></div>
+                </div>
+
+                <div class="galeria-item automotriz" data-categoria="automotriz">
+                    <img src="images/auto-2.jpg" alt="Nissan GT-R">
+                    <div class="overlay"><h3>Deportivos</h3></div>
+                </div>
+
+                <div class="galeria-item automotriz" data-categoria="automotriz">
+                    <img src="images/auto-3.jpg" alt="Auto rojo noche">
+                    <div class="overlay"><h3>Noche</h3></div>
+                </div>
+
+                <div class="galeria-item automotriz" data-categoria="automotriz">
+                    <img src="images/auto-4.jpg" alt="Porsche blanco">
+                    <div class="overlay"><h3>Lujo</h3></div>
+                </div>
+
+                <!-- GASTRONOMIA (5 fotos) -->
+                <div class="galeria-item gastronomia" data-categoria="gastronomia">
+                    <img src="images/comida-1.jpg" alt="Plato gourmet">
+                    <div class="overlay"><h3>Gourmet</h3></div>
+                </div>
+
+                <div class="galeria-item gastronomia" data-categoria="gastronomia">
+                    <img src="images/comida-2.jpg" alt="Bebida roja">
+                    <div class="overlay"><h3>Bebidas</h3></div>
+                </div>
+
+                <div class="galeria-item gastronomia" data-categoria="gastronomia">
+                    <img src="images/comida-3.jpg" alt="Sopa gourmet">
+                    <div class="overlay"><h3>Sopas</h3></div>
+                </div>
+
+                <div class="galeria-item gastronomia" data-categoria="gastronomia">
+                    <img src="images/comida-4.jpg" alt="Langosta">
+                    <div class="overlay"><h3>Mariscos</h3></div>
+                </div>
+
+                <div class="galeria-item gastronomia" data-categoria="gastronomia">
+                    <img src="images/comida-5.jpg" alt="Crema de zanahoria">
+                    <div class="overlay"><h3>Alta cocina</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO SECTION -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            
+            <div class="contacto-content">
+                <div class="info-contacto">
+                    <h3>Información de Contacto</h3>
+                    <p><strong>Nombre:</strong> Julián Martín Vargas García</p>
+                    <p><strong>Teléfono:</strong> <a href="tel:698943420">698943420</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:julianvargasgarcia1996@gmail.com">julianvargasgarcia1996@gmail.com</a></p>
+                </div>
+
+                <form class="formulario-contacto" id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descripcion">Descripción / Mensaje</label>
+                        <textarea id="descripcion" name="descripcion" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Julián Martín Vargas García. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
